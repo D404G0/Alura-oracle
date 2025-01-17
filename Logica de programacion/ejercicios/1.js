@@ -31,7 +31,7 @@ let saldo_disponible = 1000;
 alert("¡Error! Completa todos los campos");
 
 //7
-mensaje_de_error = "¡Error! Completa todos los campos";
+let mensaje_de_error = "¡Error! Completa todos los campos";
 alert(mensaje_de_error);
 
 //8
