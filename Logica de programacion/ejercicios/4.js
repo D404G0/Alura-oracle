@@ -15,3 +15,79 @@ Desafíos finales:
 12. Utiliza Math.random para generar un número entero entre 1 y 10 y muestra ese número en la consola.
 13. Utiliza Math.random para generar un número entero entre 1 y 1000 y muestra ese número en la consola.
 */
+
+/*
+
+//1
+let mensaje = "Hola, bienvenidos y bienvenidas.";
+console.log(mensaje);
+
+//2
+let nombre = "Diego";
+console.log(`¡Hola, ${nombre}!`);
+
+//3
+let nombre = "Diego";
+alert("¡Hola, " + nombre + "!");
+
+//4
+let pregunta = prompt("¿Cuál es el lenguaje de programación que más te gusta?");
+console.log(pregunta);
+
+//5
+let valor1 = 15;
+let valor2 = 9;
+let resultado = valor1 + valor2;
+console.log(`La suma de ${valor1} y ${valor2} es igual a ${resultado}.`);
+
+//6
+let valor1 = 15;
+let valor2 = 9;
+let resultado = valor1 - valor2;
+console.log(`La diferencia entre ${valor1} y ${valor2} es igual a ${resultado}.`);
+
+//7
+let edad = parseInt(prompt("Ingrese su edad: "));
+if (edad >= 18){
+    console.log("Felicidades, ya eres mayor de edad");
+} else{
+    console.log("Lo siento, aun no eres mayor de edad 😔");
+}
+
+//8
+let numero = parseInt(prompt("Ingrese cualquier valor numerico: "));
+if (numero > 0){
+    console.log("Su valor es positivo.");
+} else if (numero < 0){
+    console.log("Su valor es negativo.");
+} else{
+    console.log("Su valor es 0.");
+}
+
+//9
+let numero = 1;
+while (numero <= 10){
+    console.log(numero++);
+}
+
+//10
+let nota = Math.floor(Math.random() * 10) + 1;
+console.log(nota)
+if (nota >= 7){
+    console.log("Felicidades, aprobaste.");
+} else{
+    console.log("Lo sentimos, reprobaste.");
+}
+
+//11
+let numero_aleatorio = Math.random();
+console.log(numero_aleatorio);
+
+//12
+let numero_aleatorio = Math.floor(Math.random() * 10) + 1;
+console.log(numero_aleatorio);
+
+let numero_aleatorio = Math.floor(Math.random() * 1000) + 1;
+console.log(numero_aleatorio);
+
+*/
