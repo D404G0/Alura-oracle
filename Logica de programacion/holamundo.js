@@ -12,6 +12,13 @@ console.log(numero_usuario);
 if (numero_usuario == numero_secreto){
     //concatenacion con +
     alert("Acertaste, el numero secreto es: " + numero_usuario);
+
+} else if (numero_usuario < numero_secreto){
+    alert(`El numero secreto es mayor al que ingreso: ${numero_usuario}`);
+
+} else if (numero_usuario > numero_secreto){
+    alert(`El numero secreto es menor al que ingreso: ${numero_usuario}`);
+    
 } else {
     //concatenacion con ``
     alert(`No acertaste, el numero secreto es:  ${numero_secreto}`);
