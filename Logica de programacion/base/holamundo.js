@@ -2,7 +2,7 @@
     alert("hola mundo");
 
     //prompt
-    let rango_numero = parseInt(prompt("Ingresa un numero maximo para generar un numero secreto: "))
+    let rango_numero = parseInt(prompt("Ingresa un numero maximo para generar un numero secreto: "));
     console.log(rango_numero);
 
     //variables
@@ -52,7 +52,7 @@ while (true){
         break
     
     } else {
-        alert("Error, intentelo nuevamente")
+        alert("Error, intentelo nuevamente");
     }
 
 }

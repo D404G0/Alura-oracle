@@ -10,7 +10,7 @@
 
 
 let titulo = document.querySelector('h1');
-titulo.innerHTML = "Hora del desafio."
+titulo.innerHTML = "Hora del desafio.";
 
 function mensaje_consola(){
     console.log("El boton fue clicado.");
