@@ -1,9 +1,11 @@
 let numero_secreto = generar_numero_secreto();
+console.log(numero_secreto)
+
+let intentos = 0
 
 function generar_numero_secreto(){
     return Math.floor(Math.random() * 10) + 1;
 }
-
 
 function texto_para_elemento(elemento, texto){
     let variableHTML = document.querySelector(elemento);
@@ -16,8 +18,9 @@ texto_para_elemento("p", "Ingresa un numero maximo para generar un numero secret
 
 function verificar_intento(){
     let numero_usuario = parseInt(document.getElementById('numero_usuario').value);
+    intentos ++
     if(numero_secreto === numero_usuario){
-        texto_para_elemento("p", `Acertaste, el numero secreto es ${numero_usuario}. `); 
+        texto_para_elemento("p", `Acertaste, el numero secreto es ${numero_usuario} y lo lograste en ${intentos} ${(intentos === 1) ? 'vez.' : 'veces.' }`); 
 
     }else if(numero_usuario > numero_secreto){
         texto_para_elemento("p", `El numero secreto es menor que ${numero_usuario}.`);
@@ -25,5 +28,6 @@ function verificar_intento(){
     }else if(numero_usuario < numero_secreto){
         texto_para_elemento("p", `El numero secreto es mayor que ${numero_usuario}. `);
     }
+    console.log(intentos)
     return;
 }
