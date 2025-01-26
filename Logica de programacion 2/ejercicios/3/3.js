@@ -9,8 +9,10 @@ Desafíos:
 */
 
 //1
+/*
 let altura = parseFloat(prompt(("Ingrese su altura en: ")));
 let peso_kg = parseInt(prompt("Ingrese su peso: "));
+*/
 
 function uno(altura, peso_kg){
     let imc = parseInt(peso_kg/(altura * altura));
@@ -19,11 +21,64 @@ function uno(altura, peso_kg){
 }
 
 //2
-let numero = parseInt(prompt("Ingrese Un numero para saber su valor factorial: "));
+/*
+let numero = parseInt(prompt("Ingrese un número: "));
+let factorial = 1;
+*/
 function dos(numero){
     while (numero > 0){
-        numero = numero * (numero-1);
-        console.log(`El factorial es ${numero}`);
+        factorial *= numero;
+        numero --
+    }
+    return console.log(`El factorial de su número es ${factorial}`);
+}
+
+
+//3
+/*
+let dolar = parseFloat(prompt("Ingrese su cantidad de dinero en dolares: "));
+*/
+function tres(dolar){
+    real_brasileño = 4.80;
+    peso_colombiano = 4.222;
+
+    conversion_reales = dolar * real_brasileño;
+    conversion_pesos = dolar * peso_colombiano;
+
+    return console.log(`La conversion de sus dolares en reales es ${conversion_reales} y en pesos clombianos es ${conversion_pesos}.`);
+}
+
+//4
+/*
+let altura = parseFloat(prompt("Ingrese la altura de su zona rectangular: "));
+let ancho = parseFloat(prompt("Ingrese el ancho de su zona rectangular: "));
+*/
+function cuatro(altura, ancho){
+    perimetro = (altura * 2) + (ancho * 2);
+    area = altura * ancho;
+    return console.log(`El perimetro de su rectangulo es ${perimetro}cm y el area es ${area}cm2`);
+}
+
+//5
+/*
+let radio = parseFloat(prompt("Ingrese el radio de su circulo: "));
+*/
+function cinco(radio){
+    let pi = 3.14;
+    perimetro = pi * (radio * 2);
+    area = pi * (radio ** 2);
+    return console.log(`El perimetro de su circulo con radio ${radio} es ${perimetro}cm y su area es ${area}cm2`);
+}
+
+//6
+let numero_multiplicar = parseInt(prompt("Ingrese el número deseado para saber su tabla de multiplicacion: "));
+let multiplicacion = 1;
+function seis(numero_multiplicar){
+
+    while (multiplicacion <= 10){
+        resultado = numero_multiplicar * multiplicacion;
+        console.log(`${numero_multiplicar} * ${multiplicacion} = ${resultado}`);
+        multiplicacion ++;
     }
     return;
 }
