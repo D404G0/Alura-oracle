@@ -1,11 +1,8 @@
 let numero_secreto = 0;
 let intentos = 0;
+let lista_numeros = [];
+let rango_numero = 10;
 
-
-//genera un numero secreto de 1 a 0
-function generar_numero_secreto(){
-    return Math.floor(Math.random() * 10) + 1;
-}
 
 //recibe el elemento y texto para que sea dinamico
 function texto_para_elemento(elemento, texto){
@@ -14,26 +11,34 @@ function texto_para_elemento(elemento, texto){
     return;
 }
 
-//condiciones iniciales
-function condiciones_iniciales(){
+//genera un numero secreto de 1 a 10
+function generar_numero_secreto(){
+    let numero_generado = Math.floor(Math.random() * rango_numero) + 1;
+    console.log(numero_generado);
+    console.log(lista_numeros);
 
-    numero_secreto = generar_numero_secreto();
-    console.log(numero_secreto);
-
-    intentos = 0;
-
-    texto_para_elemento("h1", "Adivina el numero secreto:D.");
-    texto_para_elemento("p", "Ingresa un numero maximo para generar un numero secreto :D. ");
+    if (lista_numeros.length == rango_numero){
+        texto_para_elemento("p", "Ya se usaron todos los números posibles.");
+    }else {
+        if (lista_numeros.includes(numero_generado)){
+            return generar_numero_secreto();
+        }else{
+            lista_numeros.push(numero_generado);
+            return numero_generado;
+        }
+    }
 }
-
 
 //funcion para limpiar el campo del input
 function limpiar_input(){
     document.querySelector('#numero_usuario').value = '';
 };
 
+
+
 //se inicia la verificacion del numero
 function verificar_intento(){
+
 
     // se define como int el input del ususario para la salida del dato
     let numero_usuario = parseInt(document.getElementById('numero_usuario').value);
@@ -56,6 +61,17 @@ function verificar_intento(){
     }
     console.log(intentos);
     return;
+}
+
+//condiciones iniciales
+function condiciones_iniciales(){
+    numero_secreto = generar_numero_secreto();
+    console.log(numero_secreto);
+
+    intentos = 0;
+
+    texto_para_elemento("h1", "Adivina el numero secreto:D.");
+    texto_para_elemento("p", "Ingresa un numero maximo para generar un numero secreto :D. ");
 }
 
 //funcion para reiniciar el juego despues de ganar
