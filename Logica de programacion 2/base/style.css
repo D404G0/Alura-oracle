@@ -117,3 +117,62 @@ button {
     font-size: 32px;
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .texto__parrafo {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .container__informaciones {
+        padding: 1.5rem;
+    }
+
+    .container__input {
+        height: 50px;
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .container__boton {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .texto__parrafo {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .container__informaciones {
+        padding: 1rem;
+    }
+
+    .container__input {
+        height: 45px;
+        font-size: 16px;
+        padding: 0.8rem;
+    }
+
+    .container__boton {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
