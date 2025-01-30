@@ -77,5 +77,12 @@ El juego desarrollado en esta fase está completamente funcional y **publicado e
 
 ---
 
-¡Gracias por visitar este repositorio y feliz aprendizaje! 🚀
+## 🚀 Juega ahora
 
+Puedes probar el juego en vivo desde la siguiente página:
+
+👉 **[Jugar ahora](https://d404g0.github.io/Alura-oracle/)**
+
+---
+
+¡Gracias por visitar este repositorio y feliz aprendizaje! 🚀
